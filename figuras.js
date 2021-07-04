@@ -77,6 +77,24 @@ function calcularAreaTriangulo(){
     resultadoTriangulo.innerHTML += "<font size=6> " + area + " centímetros²";
 }
 
+function calcularAlturaTriangulo(){
+    const lado1 = document.getElementById("InputTriangulo1");
+    const value1 = parseInt(lado1.value);
+    const lado2 = document.getElementById("InputTriangulo2");
+    const value2 = parseInt(lado2.value);
+    const base = document.getElementById("InputTriangulo3");
+    const value3 = parseInt(base.value);
+
+    if(value1 === value2 && value1 != value3){
+        const operacion = Math.sqrt(value1*value2 - (value3*value3) / 4);
+        const altura = operacion.toFixed(3);
+        resultadoTriangulo.innerHTML = "<font size=4> La altura de tu triángulo es: </font> </br>";
+        resultadoTriangulo.innerHTML += "<font size=6> " + altura + " centímetros";
+    }else{
+        resultadoTriangulo.innerHTML = "<font size=6> No es un triángulo Isoseles </font> </br>";
+    }
+}
+
 var resultadoCirculo = document.getElementById("Resultado-circulo");
 
 function calcularPerimetroCirculo(){
@@ -97,3 +115,4 @@ function calcularAreaCirculo(){
     resultadoCirculo.innerHTML = "<font size=4> El área de tu círculo es: </font> </br>";
     resultadoCirculo.innerHTML += "<font size=6> " + area + " centímetros²";
 }
+
