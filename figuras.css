@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Mulish', sans-serif;
+}
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #0093E9;
+    background-image: linear-gradient(180deg, #0093E9 17%, #80D0C7 66%, #fff 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header h1 {
+    font-size: 37px;
+}
+header p {
+    font-weight: 200;
+    font-size: 20px;
+    color: blue;
+}
+main {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+main .container-cuadrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-left: 40px;
+    background-color: #80D0C7;
+    color: #0093E9;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+main .container-cuadrado input {
+    border: 1px solid #0093E9;
+    border-radius: 5px;
+    color: #0093E9;
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    outline: none;
+    margin-bottom: 5px;
+}
+main .container-cuadrado button{
+    border: 1px solid #0093E9;
+    border-radius: 5px;
+    color: #0093E9;
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+main .container-cuadrado button:hover {
+    background-color: #0093E9;
+    border: 1px solid white;
+    color: white;
+}
+main .container-cuadrado form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container-cuadrado .resultado-cuadrado {
+    border: 2px solid white;
+    border-radius: 40px;
+    margin-top: 15px;
+    padding: 10px 18px 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .5);
+}
+main .container-triangulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+    background-color: #80D0C7;
+    color: #0093E9;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+main .container-triangulo label {
+    margin-top: 20px;
+}
+main .container-triangulo section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+main .container-triangulo input{
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+}
+main .container-triangulo input {
+    width: 25%;
+    border: 1px solid #0093E9;
+    border-radius: 5px;
+    color: #0093E9;
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    outline: none;
+    margin-bottom: 5px;
+}
+main .container-triangulo button{
+    width: 100%;
+    border: 1px solid #0093E9;
+    border-radius: 5px;
+    color: #0093E9;
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+main .container-triangulo button:hover {
+    background-color: #0093E9;
+    border: 1px solid white;
+    color: white;
+}
+.container-triangulo .resultado-triangulo {
+    border: 2px solid white;
+    border-radius: 40px;
+    margin-top: 15px;
+    padding: 10px 18px 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .5);
+}
+main .container-circulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-right: 40px;
+    background-color: #80D0C7;
+    color: #0093E9;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+main .container-circulo form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+main .container-circulo input {
+    border: 1px solid #0093E9;
+    border-radius: 5px;
+    color: #0093E9;
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    outline: none;
+    margin-bottom: 5px;
+}
+main .container-circulo button{
+    border: 1px solid #0093E9;
+    border-radius: 5px;
+    color: #0093E9;
+    font-size: 15px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+main .container-circulo button:hover {
+    background-color: #0093E9;
+    border: 1px solid white;
+    color: white;
+}
+.container-circulo .resultado-circulo {
+    border: 2px solid white;
+    border-radius: 40px;
+    margin-top: 15px;
+    padding: 10px 18px 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .5);
+}
+::placeholder {
+    text-align: center;
+    font-size: 15px;
+    color: #0093E9;
+    text-align: center;
+  }
