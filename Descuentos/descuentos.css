@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #00DEF0;
+    background-image: linear-gradient(0deg, #00DEF0 0%, #0076F0 100%);
+    background-repeat: no-repeat;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+}
+header h1 {
+    color: #00DEF0;
+    margin-left: 30px;
+}
+header nav {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+header ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+}
+header ul a {
+    text-decoration: none;
+    color: #00DEF0;
+}
+header ul a:hover {
+    text-decoration: underline;
+    color: white;
+}
+main {
+    width: 30%;
+    height: 700px;
+    margin: 20px auto;
+    background-color: #FBDA61;
+    background-image: linear-gradient(0deg, #FBDA61 0%, #FF5ACD 100%);
+    border: 3px solid #0076F0;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main h2 {
+    text-align: center;
+    margin-bottom: 7px;
+    color: #0076F0;
+}
+main p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #0076F0;
+}
+main img {
+    width: 35%;
+    height: auto;
+    margin-bottom: 15px;
+}
+main form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+}
+.form-label__precio {
+    font-size: 18px;
+    color: #0076F0;
+    margin-bottom: 5px;
+}
+.form-label__descuento {
+    font-size: 18px;
+    color: #0076F0;
+    margin-bottom: 5px;
+}
+.form-label__cupon {
+    font-size: 10px;
+    color: #0076F0;
+    margin-bottom: 3px;
+    width: 70%;
+}
+.form-input__precio {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #00DEF0;
+    outline: none;
+    margin-bottom: 5px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #0076F0;
+    text-align: center;
+}
+.form-input__descuento {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #00DEF0;
+    outline: none;
+    margin-bottom: 5px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #0076F0;
+    text-align: center;
+}
+.form-input__cupon {
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #00DEF0;
+    outline: none;
+    width: 70%;
+    margin-bottom: 5px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #0076F0;
+    text-align: center;
+}
+form a {
+    text-decoration: none;
+    color: #FF5ACD;
+    font-size: 10px;
+    display: block;
+    width: 50%;
+}
+form a:hover {
+    text-decoration: underline;
+}
+.form-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.form-section__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+form button{
+    background-image: linear-gradient(to top, #0076F0 0%, #00DEF0 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    border: none;
+}
+form button:hover {
+    background-position: right center;
+    color: #FF5ACD;
+    text-decoration: none;
+    border: 0.5px solid #FF5ACD;
+}
+.resultado {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    border: 1px solid #FF5ACD;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}

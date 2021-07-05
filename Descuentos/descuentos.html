@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./descuentos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./carrito.png">
+    <title>Porcentajes y descuentos | Curso Práctico de JavaScript en Platzi</title>
+</head>
+<body>
+    <header>
+        <h1>Porcentajes y descuentos</h1>
+        <nav>
+            <ul>
+                <li><a href="https://carcamacho9.github.io/curso-practico-javascript/figuras.html">Taller #1</a></li>
+                <li><a href="">Taller #2</a></li>
+                <li><a href="">Taller #3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Finaliza tu compra</h2>
+        <p>No olvides que siempre tenemos descuentos, <strong>SIEMPRE</strong>, así que no olvides aplicarlos.</p>
+        <img src="./carrito.png" alt="Carrito de compras">
+        <form action="">
+            <label class="form-label__precio" for="InputPrecio"> 
+                ¿Cuál es el precio de tu producto?
+            </label>
+            <input class="form-input__precio" id="InputPrecio" type="number" placeholder="$">
+
+            <label class="form-label__descuento" for="InputDescuento">
+                ¿Cuál es el porcentaje a descontar?
+            </label>
+            <input class="form-input__descuento" id="InputDescuento" type="number" placeholder="%">
+
+            <section class="form-section">
+                <section class="form-section__section">
+                    <label class="form-label__cupon" for="InputCupon">
+                        ¿Tienes un cupón?  
+                    </label>
+                    <input class="form-input__cupon" id="InputCupon" type="text">
+                </section>
+                <a class="form-a" type="button" onclick="quieroUnCupon()" href="#">Cómo obtener un cupón</a>
+            </section>
+            <button type="button" onclick="onClickButtonPriceDiscount()"> 
+                Calcular
+            </button>
+            <p class="resultado" id="Resultado-Precio"></p>
+        </form>
+    </main>
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>
