@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./prestamos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./icono.png">
+    <title>Simulador de créditos | Curso de Platzi</title>
+</head>
+<body>
+    <header>
+        <h1>Simulador de créditos</h1>
+        <nav>
+            <ul>
+                <li><a href="https://carcamacho9.github.io/curso-practico-javascript/Figuras/figuras.html">Taller #1</a></li>
+                <li><a href="https://carcamacho9.github.io/curso-practico-javascript/Descuentos/descuentos.html">Taller #2</a></li>
+                <li><a href="https://carcamacho9.github.io/curso-practico-javascript/Prestamos/prestamos.html">Taller #3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="main-title">Calcula las cuotas de tu préstamo</h1>
+        <form class="main-form" action="">
+            <label for="dinero">
+                ¿Cuánto necesitas?
+            </label>
+            <input class="main-form__dinero" id="dinero" type="number" placeholder="Desde $400.000" required>
+            <label for="plazo">
+                ¿A qué plazo? (en meses)
+            </label>
+            <input class="main-form__plazo" id="plazo" type="number" placeholder="De 12 a 72 meses" required>
+            <label for="interes">
+                ¿A qué interés? (% mes vencido)
+            </label>
+            <input class="main-form__interes" id="interes" type="number" placeholder="Tasa fija" required>
+            <label for="prestamo">
+                Tipo de préstamo
+            </label>
+            <select class="main-form__seleccion" id="prestamo" name="prestamo" id="prestamo">
+                <option value="Personal">Personal</option>
+                <option value="Corporativo">Corporativo</option>
+            </select>
+        </form>
+        <button class="main-button" type="button" onclick="calcularPrestamo()">Calcular</button>
+        <p class="main-resultado" id="resultado"></p>
+    </main>
+    <script src="./prestamos.js"></script>
+</body>
+</html>
